@@ -77,7 +77,7 @@ namespace QuickstartSample
             layerOverlay.Layers.Add(capitalLabelLayer);
 
             Map1.Overlays.Add(layerOverlay);
-            Map1.CurrentExtent = new RectangleShape(0, 78, 30, 26);
+            Map1.CurrentExtent = new RectangleShape(-136.60, 60.06, -53.81, 11.63);
             Map1.Refresh();
         }
     }

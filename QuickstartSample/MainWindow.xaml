@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:QuickstartSample"
         mc:Ignorable="d"
         xmlns:uc1="clr-namespace:ThinkGeo.MapSuite.Wpf;assembly=ThinkGeo.MapSuite.Wpf"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="660" Width="960">
     <Grid>
         <uc1:WpfMap Name="Map1" Loaded="Map1_Loaded"/>
     </Grid>

@@ -1,8 +1,8 @@
 # QuickstartSample-ForWpf
 
 ### Description
-The Map Suite WPF QuickStart Guide will guide you through the process of creating a sample application and will help you become familiar with Map Suite. This QuickStart Guide supports Map Suite 10.0.0.0 and higher and will show you how to create a WPF application using Map Suite WPF components. 
->Please refer to the details on [ThinkGeo Wiki](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_wpf).
+The Map Suite WPF QuickStart Guide will guide you through the process of creating a sample application and will help you become familiar with Map Suite. This QuickStart Guide supports Map Suite 10.0.0.0 and higher and will show you how to create a WPF application using Map Suite WPF components. Please refer to the details on [ThinkGeo Wiki](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_wpf).
+
 ![Screenshot](https://github.com/ThinkGeo/QuickstartSample-ForWpf/blob/master/Screenshot.png)
 
 ### Requirements

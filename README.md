@@ -1,4 +1,4 @@
-# Quickstart Sample
+# Quickstart Sample for Wpf
 
 ### Description
 The Map Suite WPF QuickStart Guide will guide you through the process of creating a sample application and will help you become familiar with Map Suite. This QuickStart Guide supports Map Suite 10.0.0.0 and higher and will show you how to create a WPF application using Map Suite WPF components.

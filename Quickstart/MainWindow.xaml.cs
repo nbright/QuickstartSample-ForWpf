@@ -6,7 +6,7 @@ using ThinkGeo.MapSuite.Shapes;
 using ThinkGeo.MapSuite.Styles;
 using ThinkGeo.MapSuite.Wpf;
 
-namespace QuickstartSample
+namespace Quickstart
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

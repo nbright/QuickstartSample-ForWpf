@@ -13,9 +13,18 @@ This sample makes use of the following NuGet Packages
 [MapSuite 10.0.0](https://www.nuget.org/packages?q=ThinkGeo)
 
 ### About the Code
+```csharp
+ShapeFileFeatureLayer capitalLabelLayer = new ShapeFileFeatureLayer(@"../../Data/WorldCapitals.shp");
+GeoFont font = new GeoFont("Arial", 9, DrawingFontStyles.Bold);
+GeoSolidBrush txtBrush = new GeoSolidBrush(GeoColor.StandardColors.Maroon);
+TextStyle textStyle = new TextStyle("CITY_NAME", font, txtBrush);
+textStyle.XOffsetInPixel = 0;
+textStyle.YOffsetInPixel = -6;
+capitalLabelLayer.ZoomLevelSet.ZoomLevel01.DefaultTextStyle = TextStyles.CreateSimpleTextStyle("CITY_NAME", "Arial", 8, DrawingFontStyles.Italic, GeoColor.StandardColors.Black, 3, 3);
+capitalLabelLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level05;
 
-Working...
-
+capitalLabelLayer.ZoomLevelSet.ZoomLevel06.DefaultTextStyle = textStyle;
+```
 ### Getting Help
 
 [Map Suite Desktop for Wpf Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_wpf)
@@ -29,7 +38,13 @@ Working...
 ### Key APIs
 This example makes use of the following APIs:
 
-Working...
+- [ThinkGeo.MapSuite.Layers.ShapeFileFeatureLayer](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.layers.shapefilefeaturelayer)
+- [ThinkGeo.MapSuite.Drawing.GeoFont](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.drawing.geofont)
+- [ThinkGeo.MapSuite.Drawing.GeoSolidBrush](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.drawing.geosolidbrush)
+- [ThinkGeo.MapSuite.Drawing.GeoColor](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.drawing.geocolor)
+- [ThinkGeo.MapSuite.Styles.TextStyle](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.styles.textstyle)
+- [ThinkGeo.MapSuite.Styles.TextStyles](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.styles.textstyles)
+- [ThinkGeo.MapSuite.Drawing.DrawingFontStyles](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.drawing.drawingfontstyles)
 
 ### About Map Suite
 Map Suite is a set of powerful development components and services for the .Net Framework.
